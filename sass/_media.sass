@@ -44,7 +44,20 @@
                 width: 16px
                 height: 1px
                 background-color: $text-color
-@media (max-width: 576px)       
-    .logo
-        width: 99px
-
+@media (max-width: 576px) 
+    .navbar      
+        .logo
+            width: 99px
+        .user
+            &__avatar, &__name
+                display: none
+    .search
+        &__input
+            display: none
+@media (max-width : 480px)
+    .container
+        max-width: 360px
+@media (max-width : 320px)
+    .container
+        max-width: 260px
+   
