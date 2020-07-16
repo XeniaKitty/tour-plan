@@ -6,6 +6,8 @@
         justify-content: space-between
         padding-top: 40px
         padding-bottom: 40px
+        &__menu-button
+            display: none 
     &__search
         margin-right: auto
         margin-left: 108px
@@ -28,29 +30,29 @@
     .logo
         width: 177px
     .search
-    display: flex
-    position: relative
-    overflow: hidden
-    border-radius: 6px
-    height: 40px
-    &__input
-        width: 350px
-        height: 100%
-        padding-left: 23px
-        padding-right: 75px
-        background-color: #f5fafe
-        border: none
-        font-style: 12px
-        line-height: 15
-        color: $text-color
-    &__button
-        position: absolute
-        top: 0
-        right: 0
-        width: 65px
-        height: 100%
-        border: none
-        background-color: $primary
+        display: flex
+        position: relative
+        overflow: hidden
+        border-radius: 6px
+        height: 40px
+        &__input
+            width: 350px
+            height: 100%
+            padding-left: 23px
+            padding-right: 75px
+            background-color: #f5fafe
+            border: none
+            font-style: 12px
+            line-height: 15
+            color: $text-color
+        &__button
+            position: absolute
+            top: 0
+            right: 0
+            width: 65px
+            height: 100%
+            border: none
+            background-color: $primary
 .user
     display: flex
     align-items: center
