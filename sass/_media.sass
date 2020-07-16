@@ -26,8 +26,14 @@
         max-width: 576px
         width: 92%
     .navbar
-        &__search, &-menu, &__user
-            display: none
+        &-menu,
+            display: none    
+        .user
+            &__avatar, &__name
+                display: none
+        .search
+            &__input
+                display: none
     .menu
         &-button
             display: flex
@@ -48,15 +54,10 @@
     .navbar      
         .logo
             width: 99px
-        .user
-            &__avatar, &__name
-                display: none
-    .search
-        &__input
-            display: none
 @media (max-width : 480px)
     .container
         max-width: 360px
+        widows: 92%
 @media (max-width : 320px)
     .container
         max-width: 260px

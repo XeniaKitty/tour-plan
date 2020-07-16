@@ -514,7 +514,13 @@ template {
     max-width: 576px;
     width: 92%;
   }
-  .navbar__search, .navbar-menu, .navbar__user {
+  .navbar-menu {
+    display: none;
+  }
+  .navbar .user__avatar, .navbar .user__name {
+    display: none;
+  }
+  .navbar .search__input {
     display: none;
   }
   .menu-button {
@@ -549,17 +555,12 @@ template {
   .navbar .logo {
     width: 99px;
   }
-  .navbar .user__avatar, .navbar .user__name {
-    display: none;
-  }
-  .search__input {
-    display: none;
-  }
 }
 
 @media (max-width: 480px) {
   .container {
     max-width: 360px;
+    widows: 92%;
   }
 }
 
