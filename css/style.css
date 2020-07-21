@@ -437,7 +437,7 @@ template {
   padding-right: 75px;
   background-color: #f5fafe;
   border: none;
-  font-style: 12px;
+  font-size: 12px;
   line-height: 15;
   color: #333333;
 }
@@ -472,7 +472,7 @@ template {
 
 .navbar .user__name {
   margin-left: 18px;
-  font-style: 14px;
+  font-size: 14px;
   line-height: 18px;
   color: #333333;
 }
@@ -537,7 +537,7 @@ template {
 }
 
 .hotel-name {
-  font-size: 24pz;
+  font-size: 24px;
   line-height: 30px;
 }
 
@@ -969,7 +969,6 @@ template {
 @media (max-width: 480px) {
   .container {
     max-width: 360px;
-    widows: 92%;
   }
 }
 
