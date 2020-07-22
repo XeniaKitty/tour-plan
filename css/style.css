@@ -1217,17 +1217,17 @@ template {
     display: none;
   }
   .reviews-slider__button {
-    top: 45px;
+    top: 30px;
   }
   .reviews-slider__button--prev {
     left: 50%;
-    margin-left: -65px;
+    margin-left: -80px;
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
   }
   .reviews-slider__button--next {
     right: 50%;
-    margin-right: -65px;
+    margin-right: -80px;
     -webkit-transform: translate(50%, 0);
             transform: translate(50%, 0);
   }
@@ -1258,17 +1258,20 @@ template {
   .container {
     max-width: 360px;
   }
+  .reviews__title {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 43px;
+  }
 }
 
 @media (max-width: 320px) {
   .container {
     max-width: 260px;
   }
-  .breadcrumb,
-  .hotel,
-  .newsletter,
-  .reviews {
-    display: none;
+  .map {
+    margin-top: 10px;
+    margin-bottom: 40px;
   }
 }
 /*# sourceMappingURL=style.css.map */

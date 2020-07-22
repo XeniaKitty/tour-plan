@@ -116,14 +116,14 @@
                 &:after, &:before
                     display: none
             &__button
-                top: 45px
+                top: 30px
                 &--prev
                     left: 50%
-                    margin-left: -65px
+                    margin-left: -80px
                     transform: translate(-50%, 0)
                 &--next
                     right: 50%
-                    margin-right: -65px
+                    margin-right: -80px
                     transform: translate(50%, 0)
 @media (max-width: 576px) 
     .navbar      
@@ -143,14 +143,16 @@
 @media (max-width : 480px)
     .container
         max-width: 360px
-@media (max-width : 320px)
-    .container
-        max-width: 260px
-    .breadcrumb,
-    .hotel,
-    .newsletter,
     .reviews
-        display: none
-    
+        &__title
+            font-size: 18px
+            line-height: 23px
+            margin-bottom: 43px
+@media (max-width : 320px)
+    .container,
+        max-width: 260px
+    .map
+        margin-top: 10px
+        margin-bottom: 40px    
      
    
