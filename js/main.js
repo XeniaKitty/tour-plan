@@ -24,4 +24,4 @@ var reviewsSlider = new Swiper('.reviews-slider', {
       enabled: true,
       onlyInViewport: false,
     },
-})
+});
