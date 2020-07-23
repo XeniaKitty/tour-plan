@@ -582,6 +582,7 @@ template {
 .hotel-slider {
   width: 728px;
   height: 450px;
+  margin-right: 60px;
 }
 
 .hotel-slider__item {
@@ -1384,13 +1385,6 @@ template {
     font-size: 30px;
     line-height: 38px;
   }
-  .reviews-slider__item {
-    height: 438px;
-  }
-  .reviews-slider__text {
-    max-width: 219px;
-    max-height: 266px;
-  }
   .reviews__title {
     font-size: 18px;
     line-height: 23px;
@@ -1419,9 +1413,17 @@ template {
   .reviews__title {
     max-width: 245px;
   }
+  .reviews__text {
+    width: 220px;
+    height: 266px;
+  }
   .map {
     margin-top: 10px;
     margin-bottom: 40px;
+  }
+  .activities__title {
+    font-size: 18px;
+    line-height: 23px;
   }
 }
 /*# sourceMappingURL=style.css.map */
