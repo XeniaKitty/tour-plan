@@ -23,6 +23,7 @@ var reviewsSlider = new Swiper('.reviews-slider', {
   keyboard: {
       enabled: true,
       onlyInViewport: false,
-    },
+  },
 });
+
 

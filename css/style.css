@@ -815,6 +815,7 @@ template {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .newsletter:before {
@@ -1202,6 +1203,9 @@ template {
   .reviews-slider__item {
     max-width: 580px;
   }
+  .activities {
+    padding: 57px 36px 70px 35px;
+  }
   .activities-wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1337,6 +1341,8 @@ template {
   .activities {
     padding-top: 40px;
     padding-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 21px;
   }
   .card {
     width: 49%;
