@@ -1404,6 +1404,7 @@ template {
   }
   .reviews__title {
     max-width: 270px;
+    margin: auto;
     margin-bottom: 43px;
   }
 }
