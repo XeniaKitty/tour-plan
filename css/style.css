@@ -1386,6 +1386,7 @@ template {
     line-height: 38px;
   }
   .reviews__title {
+    max-width: 505px;
     font-size: 18px;
     line-height: 23px;
   }
@@ -1402,6 +1403,7 @@ template {
     max-width: 360px;
   }
   .reviews__title {
+    max-width: 270px;
     margin-bottom: 43px;
   }
 }
