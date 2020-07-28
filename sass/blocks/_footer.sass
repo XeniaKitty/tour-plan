@@ -106,3 +106,42 @@
         font-size: 12px
         line-height: 15px
         color: #E0E0E0
+    &-bottom
+        margin-top: 102px
+        display: grid
+        grid-template: 1fr / repeat(3, 1fr)
+        &__top 
+            grid-column-start: 2
+            margin-left: auto
+            margin-right: 35px
+        &__end 
+            display: grid
+            justify-content: flex-end
+    .list
+        &-links 
+            display: grid
+            grid-template: 1fr / repeat(3, max-content)
+            grid-gap: 5px
+            list-style: none
+            margin: 0
+            padding: 0
+            &__textlink 
+                text-decoration: none
+                font-style: normal
+                font-weight: normal
+                font-size: 12px
+                line-height: 15px
+                color: #ffffff
+        &-images 
+            display: grid
+            grid-template: 1fr / repeat(5, minmax(32px, 1fr))
+            list-style: none
+            min-width: 136px
+            margin: 0
+            padding: 0
+            &__image
+                max-width: 50px
+                max-height: 20px
+  
+            
+  

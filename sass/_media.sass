@@ -89,6 +89,11 @@
             &-form
                 grid-column: span 5
                 grid-row: 4
+        &-bottom
+            &__top
+                grid-column-start: 1
+            &__end
+                grid-column-start: 3
 @media (max-width: 768px)
     .container
         max-width: 576px
@@ -185,7 +190,16 @@
     .footer
         &__input
             flex-basis: 100%
-        
+        &-bottom 
+            grid-template: repeat(2, 1fr)/1fr
+            &__top 
+                grid-row-start: 1
+                margin-left: 0
+            &__end 
+                justify-content: flex-start
+    .list
+        &-links 
+            max-width: 300px        
 @media (max-width: 576px) 
     .navbar      
         .logo
@@ -217,15 +231,17 @@
     .card
         width: 100%
     .footer
+        padding-bottom: 20px
         &-wrapper
             grid-template-columns: 1fr
+            margin-bottom: 30px     
         &__logo
             grid-row: 1
             grid-column: 1
         &__social
             &-network
-            grid-row: 2
-            grid-column: 1
+                grid-row: 2
+                grid-column: 1    
         &__additional
             grid-row: 3
             grid-column: 1
@@ -242,6 +258,28 @@
             &-form
                 grid-row: 7
                 grid-column: 1
+        &__text,
+        &__item--mb-2,
+        &__input,
+            max-width: 460px
+        &__message 
+            margin-bottom: 15px
+            max-width: 460px
+        &__form 
+            flex-wrap: wrap
+        &__info
+            flex-basis: 100%
+            order: 1
+            margin-bottom: 15px
+        &__button 
+            order: 2
+        &-bottom 
+            grid-template: repeat(2, 1fr) / 1fr
+            &__top
+                margin: 0 0 20px 
+                justify-content: flex-start
+            &__end
+                grid-column-start: 1
 @media (max-width : 480px)
     .container
         max-width: 360px
@@ -250,8 +288,14 @@
             max-width: 270px
             margin: auto
             margin-bottom: 43px
+    .footer
+        &__text,
+        &__item--mb-2,
+        &__input,
+        &__message
+           max-width: 320px           
 @media (max-width : 320px)
-    .container,
+    .container
         max-width: 260px
     .reviews
         &__title
@@ -266,4 +310,10 @@
         &__title
             font-size: 18px
             line-height: 23px
+    .footer
+        &__text,
+        &__item--mb-2,
+        &__input,
+        &__message
+           max-width: 220px  
    

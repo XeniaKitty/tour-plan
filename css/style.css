@@ -1318,6 +1318,70 @@ template {
   color: #E0E0E0;
 }
 
+.footer-bottom {
+  margin-top: 102px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+  -ms-grid-columns: (1fr)[3];
+      grid-template: 1fr/repeat(3, 1fr);
+}
+
+.footer-bottom__top {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  margin-left: auto;
+  margin-right: 35px;
+}
+
+.footer-bottom__end {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.footer .list-links {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+  -ms-grid-columns: (-webkit-max-content)[3];
+  -ms-grid-columns: (max-content)[3];
+      grid-template: 1fr/repeat(3, -webkit-max-content);
+      grid-template: 1fr/repeat(3, max-content);
+  grid-gap: 5px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer .list-links__textlink {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+}
+
+.footer .list-images {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+  -ms-grid-columns: (minmax(32px, 1fr))[5];
+      grid-template: 1fr/repeat(5, minmax(32px, 1fr));
+  list-style: none;
+  min-width: 136px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer .list-images__image {
+  max-width: 50px;
+  max-height: 20px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1453,6 +1517,14 @@ template {
     grid-column: span 5;
     -ms-grid-row: 4;
     grid-row: 4;
+  }
+  .footer-bottom__top {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+  }
+  .footer-bottom__end {
+    -ms-grid-column: 3;
+        grid-column-start: 3;
   }
 }
 
@@ -1597,6 +1669,24 @@ template {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
+  .footer-bottom {
+    -ms-grid-rows: (1fr)[2];
+    -ms-grid-columns: 1fr;
+        grid-template: repeat(2, 1fr)/1fr;
+  }
+  .footer-bottom__top {
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    margin-left: 0;
+  }
+  .footer-bottom__end {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .list-links {
+    max-width: 300px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1636,9 +1726,13 @@ template {
   .card {
     width: 100%;
   }
+  .footer {
+    padding-bottom: 20px;
+  }
   .footer-wrapper {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    margin-bottom: 30px;
   }
   .footer__logo {
     -ms-grid-row: 1;
@@ -1646,7 +1740,7 @@ template {
     -ms-grid-column: 1;
     grid-column: 1;
   }
-  .footer__social {
+  .footer__social-network {
     -ms-grid-row: 2;
     grid-row: 2;
     -ms-grid-column: 1;
@@ -1682,6 +1776,45 @@ template {
     -ms-grid-column: 1;
     grid-column: 1;
   }
+  .footer__text, .footer__item--mb-2, .footer__input {
+    max-width: 460px;
+  }
+  .footer__message {
+    margin-bottom: 15px;
+    max-width: 460px;
+  }
+  .footer__form {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer__info {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-bottom: 15px;
+  }
+  .footer__button {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .footer-bottom {
+    -ms-grid-rows: (1fr)[2];
+    -ms-grid-columns: 1fr;
+        grid-template: repeat(2, 1fr)/1fr;
+  }
+  .footer-bottom__top {
+    margin: 0 0 20px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .footer-bottom__end {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1692,6 +1825,9 @@ template {
     max-width: 270px;
     margin: auto;
     margin-bottom: 43px;
+  }
+  .footer__text, .footer__item--mb-2, .footer__input, .footer__message {
+    max-width: 320px;
   }
 }
 
@@ -1713,6 +1849,9 @@ template {
   .activities__title {
     font-size: 18px;
     line-height: 23px;
+  }
+  .footer__text, .footer__item--mb-2, .footer__input, .footer__message {
+    max-width: 220px;
   }
 }
 /*# sourceMappingURL=style.css.map */
