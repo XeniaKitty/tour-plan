@@ -1284,7 +1284,6 @@ template {
 }
 
 .footer__message {
-  width: 539px;
   height: 123px;
   background-color: #ffffff;
   border-radius: 4px;
@@ -1476,6 +1475,8 @@ template {
     -ms-grid-columns: (1fr)[6];
         grid-template-columns: repeat(6, 1fr);
     grid-row-gap: 40px;
+    margin-right: 40px;
+    margin-left: 22px;
   }
   .footer__input {
     -ms-flex-preferred-size: 49%;
@@ -1665,6 +1666,9 @@ template {
     width: 49%;
     height: 255px;
   }
+  .footer-form {
+    grid-column: span 2;
+  }
   .footer__input {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
@@ -1776,12 +1780,8 @@ template {
     -ms-grid-column: 1;
     grid-column: 1;
   }
-  .footer__text, .footer__item--mb-2, .footer__input {
-    max-width: 460px;
-  }
   .footer__message {
     margin-bottom: 15px;
-    max-width: 460px;
   }
   .footer__form {
     -ms-flex-wrap: wrap;
@@ -1826,9 +1826,6 @@ template {
     margin: auto;
     margin-bottom: 43px;
   }
-  .footer__text, .footer__item--mb-2, .footer__input, .footer__message {
-    max-width: 320px;
-  }
 }
 
 @media (max-width: 320px) {
@@ -1849,9 +1846,6 @@ template {
   .activities__title {
     font-size: 18px;
     line-height: 23px;
-  }
-  .footer__text, .footer__item--mb-2, .footer__input, .footer__message {
-    max-width: 220px;
   }
 }
 /*# sourceMappingURL=style.css.map */
