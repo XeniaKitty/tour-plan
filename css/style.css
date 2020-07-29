@@ -1745,6 +1745,9 @@ template {
   .navbar .logo {
     width: 99px;
   }
+  .search__input {
+    max-width: 245px;
+  }
   .hotel__slider {
     margin-bottom: 20px;
   }
