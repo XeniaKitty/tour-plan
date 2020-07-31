@@ -94,6 +94,9 @@
                 grid-column-start: 1
             &__end
                 grid-column-start: 3
+    .modal
+        &__dialog
+            width: 478px
 @media (max-width: 768px)
     .container
         max-width: 576px
@@ -236,6 +239,10 @@
         &__user
             flex-direction: column
             justify-content: center
+    .modal
+        &__dialog
+            width: 450px
+            padding: 30px 60px
    
 @media (max-width: 576px) 
     .navbar      
@@ -315,6 +322,16 @@
                 justify-content: flex-start
             &__end
                 grid-column-start: 1
+    .modal
+        &__dialog
+            max-width: 450px
+            width: 84%
+            padding: 20px 30px
+        &__info
+            flex-basis: 100%
+            margin-bottom: 15px
+        &__button
+            order: 2
 @media (max-width : 480px)
     .container
         max-width: 360px
