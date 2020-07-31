@@ -1626,6 +1626,9 @@ template {
     -ms-grid-column: 3;
         grid-column-start: 3;
   }
+  .modal__dialog {
+    width: 478px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1837,6 +1840,10 @@ template {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .modal__dialog {
+    width: 450px;
+    padding: 30px 60px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1963,6 +1970,21 @@ template {
   .footer-bottom__end {
     -ms-grid-column: 1;
         grid-column-start: 1;
+  }
+  .modal__dialog {
+    max-width: 450px;
+    width: 84%;
+    padding: 20px 30px;
+  }
+  .modal__info {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 15px;
+  }
+  .modal__button {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
 }
 
