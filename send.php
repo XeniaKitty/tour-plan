@@ -27,7 +27,9 @@ $body = "
 <b>Имя:</b> $name<br>
 <b>Телефон:</b> $phone<br><br>
 <b>Сообщение:</b><br>$message
-"};
+";
+$request = 'send';
+};
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
