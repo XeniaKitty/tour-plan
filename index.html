@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Tour Plan - Hotel Booking</title>
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&family=Nunito:wght@400;700;800&display=swap" rel="preload">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&family=Nunito:wght@400;700;800&display=swap" as="font">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header class="navbar navbar__mobile__fixed">
@@ -197,9 +197,11 @@
                 subscribe to our
                 <span class="newsletter-title__strong">Newsletter</span>
             </h2>
-            <form action="#" class="subscribe newsletter__subscribe">
-                <input type="text" class="subscribe__input" placeholder="Your email address"/>
-                <button class="subscribe__button">Send</button>
+            <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
+                <input type="text" class="subscribe__input" placeholder="Your email address" name="e-mail"
+                required/>
+                <button class="subscribe__button" type="submit" name="form"
+                value="subscribe">Send</button>
             </form>
         </div>
         <!-- /.newsletter-wrapper -->
@@ -288,25 +290,25 @@
                 <div class="card activities__card" data-aos="fade-right" data-aos-delay="100">
                     <img src="img/activity-1.jpg" alt="The curious corner of chamarel" class="card__image">
                     <h3 class="card__title">The curious corner of chamarel</h3>
-                    <button class="card__button">Book Now</button>
+                    <button data-toggle="modal" data-href="#booking-modal" class="card__button">Book Now</button>
                 </div>
                 <!--/.card-->
                 <div class="card activities__card" data-aos="fade-right" data-aos-delay="300">
                     <img src="img/activity-2.jpg" alt="Gymkhana club golf course" class="card__image">
                     <h3 class="card__title">Gymkhana club golf course</h3>
-                    <button class="card__button">Book Now</button>
+                    <button data-toggle="modal" data-href="#booking-modal" class="card__button">Book Now</button>
                 </div>
                 <!--/.card-->
                 <div class="card activities__card" data-aos="fade-right" data-aos-delay="500">
                     <img src="img/activity-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
                     <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
-                    <button class="card__button">Book Now</button>
+                    <button data-toggle="modal" data-href="#booking-modal" class="card__button">Book Now</button>
                 </div>
                 <!--/.card-->
                 <div class="card activities__card" data-aos="fade-right" data-aos-delay="700">
                     <img src="img/activity-4.jpg" alt="The blue marine discovery quest" class="card__image">
                     <h3 class="card__title">The blue marine discovery quest</h3>
-                    <button class="card__button">Book Now</button>
+                    <button data-toggle="modal" data-href="#booking-modal" class="card__button">Book Now</button>
                 </div>
                 <!--/.card-->
             </div>
@@ -317,11 +319,11 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-wrapper">
-                <img 
+                <a href="#" class="logo footer__logo"><img 
                 src="img/vertical-logo.svg" 
                 alt="Best Tour Plan" 
                 class="logo footer__logo"
-                />
+                /></a>
                 <div class="footer__list footer__categories">
                     <h3 class="footer__title">ALL CATEGORIES</h3>
                     <ul class="footer__ul">
@@ -427,15 +429,19 @@
                            <div class="footer__icon-wrapper">
                             <img src="img/contact-phone-call.svg" alt="Icon:phone call" class="footer__icon"/>
                            </div>
-                            Tel (business hours) : 269 1500<br>
-                            Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)<br>
-                            Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                           <div class="footer__icon-wrapper">
+                            Tel (business hours) :<a href="tel:2691500" class="footer__link">269 1500</a><br>
+                            Tel (hotline) Monday - Saturday: <a href="tel:52566138" class="footer__link">52-56-61-38</a> (08:00 am – 20:00 pm)<br>
+                            Tel (hotline) Sunday:<a href="tel:52566138" class="footer__link"> 52-56-61-38</a> (08:00 am – 14:00 pm)
+                            </div>
                         </li>
                         <li class="footer__item footer__item--mb-2">
                             <div class="footer__icon-wrapper">
                                 <img src="img/email.svg" alt="Icon: email" class="footer__icon"/>
                             </div>
-                            cherly.lawson@example.com
+                            <a href="mailto:cherly.lawson@example.com" class="footer__link">
+                                cherly.lawson@example.com
+                            </a>
                         </li>
                     </ul>
                 </div>
