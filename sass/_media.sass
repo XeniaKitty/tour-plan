@@ -155,7 +155,11 @@
                 margin-top: 10px
     .stars
         flex-basis: auto
+    .breadcrumb
+        &-list
+            margin: 0
     .hotel
+        padding-top: 0
         &-name
             flex-basis: 100%
         &-wrapper
@@ -187,6 +191,9 @@
             width: 92%
             flex-direction: column
             align-items: flex-start
+        &-title
+            &__strong
+                margin-top: 5px
     .reviews
         &__title
             font-size: 30px
@@ -229,9 +236,16 @@
                 margin-left: 0
             &__end 
                 justify-content: flex-start
-    .list
-        &-links 
-            max-width: 300px    
+        &__logo
+            width: 104px
+        .list
+            &-images
+                &__image
+                    max-width: 22px
+            &-links 
+                max-width: 300px
+                &__textlink
+                    margin-right: 2px
     .navbar
         &__user, &__search
             &__mobile
@@ -257,7 +271,7 @@
         &__slider
             margin-bottom: 20px
         &-slider
-            height: 250px
+            height: 180px
     .newsletter
         padding: 76px 0 83px 0
         &__title
@@ -346,6 +360,12 @@
 @media (max-width : 320px)
     .container
         max-width: 260px
+    .hotel
+        &-info
+            &__name
+                margin-top: 10px
+        &-name
+            font-size: 20px
     .reviews
         &__title
             max-width: 245px

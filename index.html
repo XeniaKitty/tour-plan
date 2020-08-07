@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&family=Nunito:wght@400;700;800&display=swap" as="font">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&family=Nunito:wght@400;600;700&display=swap">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header class="navbar navbar__mobile__fixed">
         <div class="container">
             <div class="navbar-top">
-                <a href="#" class="logo" data-aos="fade-right" data-aos-delay="100">
+                <a href="index.html" class="logo" data-aos="fade-right" data-aos-delay="100">
                     <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image"/>
                 </a>
                 <form action="#" class="search navbar__search navbar__search__mobile__hidden" data-aos="fade-right" data-aos-delay="200">
@@ -198,7 +198,7 @@
                 <span class="newsletter-title__strong">Newsletter</span>
             </h2>
             <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
-                <input type="text" class="subscribe__input" placeholder="Your email address" id="contactsForm" name="e-mail"
+                <input type="text" class="subscribe__input" placeholder="Your email address" id="contactForm" name="e-mail"
                 required/>
                 <button class="subscribe__button" type="submit" name="form"
                 value="subscribe">Send</button>
@@ -319,7 +319,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-wrapper">
-                <a href="#" class="logo footer__logo"><img 
+                <a href="index.html" class="logo footer__logo"><img 
                 src="img/vertical-logo.svg" 
                 alt="Best Tour Plan" 
                 class="logo footer__logo"
@@ -465,6 +465,7 @@
                             placeholder="Phone Number*"
                             name="phone"
                             required
+                            minlength="10"
                             />
                         </div>
                         <textarea 
@@ -560,6 +561,7 @@
                 placeholder="Phone Number*"
                 name="phone"
                 required
+                minlength="10"
                 />
                 <input 
                 type="email" 
@@ -602,6 +604,7 @@
                 placeholder="Phone Number*"
                 name="phone"
                 required
+                minlength="10"
                 />
                 <textarea 
                 class="message modal__message" 

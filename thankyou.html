@@ -5,23 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Tour Plan - Hotel Booking</title>
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&family=Nunito:wght@400;700;800&display=swap" as="font">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header class="navbar navbar__mobile__fixed">
         <div class="container">
             <div class="navbar-top">
-                <a href="#" class="logo">
+                <a href="index.html" class="logo" data-aos="fade-right" data-aos-delay="100">
                     <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image"/>
                 </a>
-                <form action="#" class="search navbar__search navbar__search__mobile__hidden">
+                <form action="#" class="search navbar__search navbar__search__mobile__hidden" data-aos="fade-right" data-aos-delay="200">
                     <input type="text" class="search__input" placeholder="Search Location"/>
                     <button class="search__button">
                         <img src="img/search.svg" alt="Icon: search">
                     </button>
                 </form>
-                <a href="#" class="user navbar__user navbar__user__mobile__hidden">
+                <a href="#" class="user navbar__user navbar__user__mobile__hidden" data-aos="fade-right" data-aos-delay="300"> 
                     <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar"/>
                     <span class="user__name">Nathan</span>
                 </a>
@@ -100,22 +103,149 @@
                     </div>
                     <!-- /.hotel-info__wrapper -->
                     <p class="hotel-description hotel-info__description">Our manager will contact you in a few minutes.</p>
+                    <a href="index.html" class="button hotel-info__button">Main page</a>
                 </div>
                 <!-- /.hotel-info__text -->
             </div>
             <!-- /.hotel-info -->
+            
         </div>
         <!-- /.container -->
     </section>
     <!-- /.hotel -->
+    <section class="newsletter">
+        <div class="newsletter-wrapper">
+            <h2 class="newsletter-title newsletter__title">
+                subscribe to our
+                <span class="newsletter-title__strong">Newsletter</span>
+            </h2>
+            <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
+                <input type="text" class="subscribe__input" placeholder="Your email address" id="contactsForm" name="e-mail"
+                required/>
+                <button class="subscribe__button" type="submit" name="form"
+                value="subscribe">Send</button>
+            </form>
+        </div>
+        <!-- /.newsletter-wrapper -->
+    </section>
+    <section class="reviews">
+        <div class="container">
+            <h2 class="reviews__title">What people thinks about us</h2>
+            <div class="swiper-container reviews-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="reviews-slider__item">
+                            <div class="reviews-slider__profile">
+                                <img class="reviews-slider__avatar" src="img/reviews-avatar.jpg" alt="Photo: Megan Fox"/>
+                                <h3 class="reviews-slider__username">Megan Fox</h3>
+                                <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+                                <div class="reviews-slider__rating">
+                                    <img src="img/star.svg" alt="star">
+                                    <img src="img/star.svg" alt="star">
+                                    <img src="img/star.svg" alt="star">
+                                    <img src="img/star.svg" alt="star">
+                                    <img src="img/star.svg" alt="star">
+                                </div>
+                                <!-- /.rating -->
+                            </div>
+                            <!-- /.reviews-slider__profile -->
+                            <p class="reviews-slider__text"> It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good. Overall it was a good experience and could recommend. </p>
+                        </div>
+                        <!-- /.reviews-slider__item -->
+                    </div>      
+                    <!--/.swiper-slide-->  
+                    <div class="swiper-slide">
+                        <div class="reviews-slider__item">
+                            <div class="reviews-slider__profile">
+                                <img class="reviews-slider__avatar" src="img/reviews-avatar-2.jpg" alt="Photo: Jimin Soft"/>
+                                <h3 class="reviews-slider__username">Jimin Soft</h3>
+                                <span class="reviews-slider__date">Stayed 25 Feb, 2020</span>
+                                <div class="reviews-slider__rating">
+                                    <img src="img/star.svg" alt="star">
+                                    <img src="img/star.svg" alt="star">
+                                    <img src="img/star.svg" alt="star">
+                                    <img src="img/star.svg" alt="star">
+                                    <img src="img/star.svg" alt="star">
+                                </div>
+                                <!-- /.rating -->
+                            </div>
+                            <!-- /.reviews-slider__profile -->
+                            <p class="reviews-slider__text">The Hilton Garden Inn in Palmdale, CA is a true sample of excellent hospitality! My husband and I stay there often and are always so very impressed by all the staff at this property. General Manager Marian and her team are outstanding! We have stayed at other Hilton properties, but the staff at this particular location go above and beyond our expectations. During our most recent stay in Oct, we were warmly welcomed by Front Desk Clerks Lauren and D-Yante. They immediately got us checked in and offered their assistance in any way they could as they knew we were in the Palmdale area for medical appointments and wanted to ensure out stay was not only quiet but comfortable as well.</p>
+                        </div>
+                        <!-- /.reviews-slider__item -->
+                    </div>      
+                    <!--/.swiper-slide--> 
+                    <div class="swiper-slide">
+                        <div class="reviews-slider__item">
+                            <div class="reviews-slider__profile">
+                                <img class="reviews-slider__avatar" src="img/reviews-avatar-3.jpg" alt="Photo: Maria Hvasa"/>
+                                <h3 class="reviews-slider__username">Maria Hvasa</h3>
+                                <span class="reviews-slider__date">Stayed 10 Apr, 2020</span>
+                                <div class="reviews-slider__rating">
+                                    <img src="img/star.svg" alt="star">
+                                    <img src="img/star.svg" alt="star">
+                                    <img src="img/star.svg" alt="star">
+                                    <img src="img/star.svg" alt="star">
+                                    <img src="img/star.svg" alt="star">
+                                </div>
+                                <!-- /.rating -->
+                            </div>
+                            <!-- /.reviews-slider__profile -->
+                            <p class="reviews-slider__text">I would like to thank the staff at Hilton Galleria Houston for going the extra mile allowing us late checkout and then to sit by the pool till it was time to leave for the airport. The flight to New Zealand doesn’t depart till 9pm and we usually spend time at the airport which adds to the fourteen hour flight. This hotel although on the other side of the city for the airport is in a great location for last minute shopping. You can load up your bags after your domestic flight, the mall has every shop you could think of. PS flight crew also in hotel.</p>
+                        </div>
+                        <!-- /.reviews-slider__item -->
+                    </div>      
+                    <!--/.swiper-slide--> 
+                </div>
+                <!--/.swiper-wrapper--> 
+                <button class="reviews-slider__button reviews-slider__button--prev"></button>
+                <button class="reviews-slider__button reviews-slider__button--next"></button>
+            </div>
+            <!--/.reviews-slider--> 
+        </div>
+        <!-- /.container -->
+    </section>
+    <section class="activities">
+        <div class="container">
+            <h2 class="activities__title">Other Activities</h2>
+            <div class="activities-wrapper">
+                <div class="card activities__card" data-aos="fade-right" data-aos-delay="100">
+                    <img src="img/activity-1.jpg" alt="The curious corner of chamarel" class="card__image">
+                    <h3 class="card__title">The curious corner of chamarel</h3>
+                    <button data-toggle="modal" data-href="#booking-modal" class="card__button">Book Now</button>
+                </div>
+                <!--/.card-->
+                <div class="card activities__card" data-aos="fade-right" data-aos-delay="300">
+                    <img src="img/activity-2.jpg" alt="Gymkhana club golf course" class="card__image">
+                    <h3 class="card__title">Gymkhana club golf course</h3>
+                    <button data-toggle="modal" data-href="#booking-modal" class="card__button">Book Now</button>
+                </div>
+                <!--/.card-->
+                <div class="card activities__card" data-aos="fade-right" data-aos-delay="500">
+                    <img src="img/activity-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
+                    <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
+                    <button data-toggle="modal" data-href="#booking-modal" class="card__button">Book Now</button>
+                </div>
+                <!--/.card-->
+                <div class="card activities__card" data-aos="fade-right" data-aos-delay="700">
+                    <img src="img/activity-4.jpg" alt="The blue marine discovery quest" class="card__image">
+                    <h3 class="card__title">The blue marine discovery quest</h3>
+                    <button data-toggle="modal" data-href="#booking-modal" class="card__button">Book Now</button>
+                </div>
+                <!--/.card-->
+            </div>
+            <!-- /.activities-wrapper -->
+        </div>
+    </section>
+    <!-- /.activities -->
     <footer class="footer">
         <div class="container">
             <div class="footer-wrapper">
-                <img 
+                <a href="index.html" class="logo footer__logo"><img 
                 src="img/vertical-logo.svg" 
                 alt="Best Tour Plan" 
                 class="logo footer__logo"
-                />
+                /></a>
                 <div class="footer__list footer__categories">
                     <h3 class="footer__title">ALL CATEGORIES</h3>
                     <ul class="footer__ul">
@@ -221,36 +351,46 @@
                            <div class="footer__icon-wrapper">
                             <img src="img/contact-phone-call.svg" alt="Icon:phone call" class="footer__icon"/>
                            </div>
-                            Tel (business hours) : 269 1500<br>
-                            Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)<br>
-                            Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                           <div class="footer__icon-wrapper">
+                            Tel (business hours) :<a href="tel:2691500" class="footer__link">269 1500</a><br>
+                            Tel (hotline) Monday - Saturday: <a href="tel:52566138" class="footer__link">52-56-61-38</a> (08:00 am – 20:00 pm)<br>
+                            Tel (hotline) Sunday:<a href="tel:52566138" class="footer__link"> 52-56-61-38</a> (08:00 am – 14:00 pm)
+                            </div>
                         </li>
                         <li class="footer__item footer__item--mb-2">
                             <div class="footer__icon-wrapper">
                                 <img src="img/email.svg" alt="Icon: email" class="footer__icon"/>
                             </div>
-                            cherly.lawson@example.com
+                            <a href="mailto:cherly.lawson@example.com" class="footer__link">
+                                cherly.lawson@example.com
+                            </a>
                         </li>
                     </ul>
                 </div>
                 <!-- /.footer__contact-details -->
                 <div class="footer__contact-form">
                     <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-                    <form action="send.php" method="POST" class="footer__form">
-                        <input 
-                        type="text" 
-                        class="input footer__input" 
-                        placeholder="Your full Name*"
-                        name="name"
-                        />
-                        <input 
-                        type="tel" 
-                        class="input footer__input" 
-                        placeholder="Phone Number*"
-                        name="phone"
-                        />
+                    <form action="send.php" method="POST" class="footer__form form">
+                        <div class="footer__input-group">
+                            <input 
+                                type="text" 
+                                class="input footer__input" 
+                                placeholder="Your full Name*"
+                                name="name"
+                                required
+                            />
+                        </div>
+                        <div class="footer__input-group">
+                            <input 
+                            type="tel" 
+                            class="input footer__input phone" 
+                            placeholder="Phone Number*"
+                            name="phone"
+                            required
+                            />
+                        </div>
                         <textarea 
-                        class="footer__message" 
+                        class="message footer__message" 
                         placeholder="Message"
                         name="message"></textarea>
                         <button class="button footer__button" type="submit">Send</button>
@@ -319,7 +459,92 @@
         <!-- /.container -->
     </footer>
     <!-- /.footer -->
+    <div class="modal" id="booking-modal">
+        <div class="modal__overlay"></div>
+        <!-- /.modal__overlay -->
+        <div class="modal__dialog">
+            <a href="" class="modal__close">
+                <img src="img/close.svg" alt="Icon: close">
+            </a>
+            <h3 class="modal__title modal__title--mb-3">Booking</h3>
+            <form  class="modal__form form">
+                <input 
+                type="text" 
+                class="input modal__input" 
+                placeholder="Your full Name*"
+                name="name"
+                required
+                minlength="2"
+                />
+                <input 
+                type="tel" 
+                class="input modal__input phone" 
+                placeholder="Phone Number*"
+                name="phone"
+                required
+                />
+                <input 
+                type="email" 
+                class="input modal__input" 
+                placeholder="Email*"
+                id="contactsForm"
+                name="e-mail"
+                required
+                />
+                <textarea 
+                class="message modal__message" 
+                placeholder="Message"
+                name="message"></textarea>
+                <button class="button modal__button" type="submit">Send</button>
+                <span class="modal__info">* Required Fields</span>
+            </form>
+        </div>
+        <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+    <div class="modal" id="raiting-modal">
+        <div class="modal__overlay"></div>
+        <!-- /.modal__overlay -->
+        <div class="modal__dialog">
+            <a href="" class="modal__close">
+                <img src="img/close.svg" alt="Icon: close">
+            </a>
+            <h3 class="modal__title modal__title--mb-3">Send us a feedback</h3>
+            <form  class="modal__form form">
+                <input 
+                type="text" 
+                class="input modal__input" 
+                placeholder="Your full Name*"
+                name="name"
+                required
+                />
+                <input 
+                type="tel" 
+                class="input modal__input phone" 
+                placeholder="Phone Number*"
+                name="phone"
+                required
+                />
+                <textarea 
+                class="message modal__message" 
+                placeholder="Message"
+                name="message"></textarea>
+                <button class="button modal__button" type="submit">Send</button>
+                <span class="modal__info">* Required Fields</span>
+            </form>
+        </div>
+        <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+    <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/inputmask.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
+
+
+

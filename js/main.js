@@ -66,11 +66,14 @@ $(document).ready(function() {
         },
         phone: {
           required: "Phone is required",
+          minlength: jQuery.validator.format("At least 10 characters required!"),
+					phone: "Your tel number must be in the format of  +7 *** *** ** **",
         },
       },   
     });
   });   
   $("#contactsForm").inputmask("email");
+  $("#contactForm").inputmask("email");
   jQuery(function($){
     $(".phone").mask("+7 (999) 999-99-99");
  });
