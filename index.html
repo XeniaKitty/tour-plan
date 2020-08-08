@@ -43,7 +43,7 @@
                 <ul class="navbar-menu">
                     <li class="navbar-menu__item navbar-menu__item__mobile__visible">
                         <a href="#" class="user navbar__user navbar__user__mobile__visible">
-                            <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar"/>
+                            <img src="#" data-src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar lazyload"/>
                             <span class="user__name user__name--light">Nathan</span>
                         </a>
                     </li>
@@ -116,7 +116,7 @@
                 <!-- /.hotel-info__text -->
                 <div data-toggle="modal" data-href="#raiting-modal" class="raiting hotel-info__raiting">
                     <span class="raiting__text">User Rattings</span>
-                    <span class="raiting__counter">4.5/5</span>
+                    <span class="raiting__counter">4.5/<small>5</small></span>
                 </div>
                 <!-- /.raiting hotel-info__raiting -->
             </div>
@@ -131,13 +131,13 @@
                             <img class="hotel-slider__image" src="img/slide-1.jpg" alt="Slide 1">
                         </div>
                         <div class="swiper-slide hotel-slider__item">
-                            <img class="hotel-slider__image" src="img/slide-2.jpg" alt="Slide 2">
+                            <img src="#" class="hotel-slider__image lazyload" data-src="img/slide-2.jpg" alt="Slide 2">
                         </div>
                         <div class="swiper-slide hotel-slider__item">
-                            <img class="hotel-slider__image" src="img/slide-3.jpg" alt="Slide 3">
+                            <img src="#" class="hotel-slider__image lazyload" data-src="img/slide-3.jpg" alt="Slide 3">
                         </div>
                         <div class="swiper-slide hotel-slider__item">
-                            <img class="hotel-slider__image" src="img/slide-4.jpg" alt="Slide 4">
+                            <img src="#" class="hotel-slider__image lazyload" data-src="img/slide-4.jpg" alt="Slide 4">
                         </div>
                         <div class="swiper-slide hotel-slider__item">
                             <img class="hotel-slider__image" src="img/slide-5.jpg" alt="Slide 5">
@@ -235,7 +235,7 @@
                     <div class="swiper-slide">
                         <div class="reviews-slider__item">
                             <div class="reviews-slider__profile">
-                                <img class="reviews-slider__avatar" src="img/reviews-avatar-2.jpg" alt="Photo: Jimin Soft"/>
+                                <img src="#" class="reviews-slider__avatar lazyload" data-src="img/reviews-avatar-2.jpg" alt="Photo: Jimin Soft"/>
                                 <h3 class="reviews-slider__username">Jimin Soft</h3>
                                 <span class="reviews-slider__date">Stayed 25 Feb, 2020</span>
                                 <div class="reviews-slider__rating">
@@ -256,8 +256,8 @@
                     <div class="swiper-slide">
                         <div class="reviews-slider__item">
                             <div class="reviews-slider__profile">
-                                <img class="reviews-slider__avatar" src="img/reviews-avatar-3.jpg" alt="Photo: Maria Hvasa"/>
-                                <h3 class="reviews-slider__username">Maria Hvasa</h3>
+                                <img src="#" class="reviews-slider__avatar lazyload" data-src="img/reviews-avatar-3.jpg" alt="Photo: Maria Hvasa"/>
+                                <h3 class="reviews-slider__username">Maria Hwasa</h3>
                                 <span class="reviews-slider__date">Stayed 10 Apr, 2020</span>
                                 <div class="reviews-slider__rating">
                                     <img src="img/star.svg" alt="star">
@@ -294,13 +294,13 @@
                 </div>
                 <!--/.card-->
                 <div class="card activities__card" data-aos="fade-right" data-aos-delay="300">
-                    <img src="img/activity-2.jpg" alt="Gymkhana club golf course" class="card__image">
+                    <img src="#" data-src="img/activity-2.jpg" alt="Gymkhana club golf course" class="card__image lazyload">
                     <h3 class="card__title">Gymkhana club golf course</h3>
                     <button data-toggle="modal" data-href="#booking-modal" class="card__button">Book Now</button>
                 </div>
                 <!--/.card-->
                 <div class="card activities__card" data-aos="fade-right" data-aos-delay="500">
-                    <img src="img/activity-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
+                    <img src="#" data-src="img/activity-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image lazyload">
                     <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
                     <button data-toggle="modal" data-href="#booking-modal" class="card__button">Book Now</button>
                 </div>
@@ -319,10 +319,10 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-wrapper">
-                <a href="index.html" class="logo footer__logo"><img 
-                src="img/vertical-logo.svg" 
+                <a href="index.html" class="logo footer__logo"><img src="#" 
+                data-src="img/vertical-logo.svg" 
                 alt="Best Tour Plan" 
-                class="logo footer__logo"
+                class="logo footer__logo lazyload"
                 /></a>
                 <div class="footer__list footer__categories">
                     <h3 class="footer__title">ALL CATEGORIES</h3>
@@ -465,7 +465,7 @@
                             placeholder="Phone Number*"
                             name="phone"
                             required
-                            minlength="10"
+                            minlength="18"
                             />
                         </div>
                         <textarea 
@@ -496,38 +496,38 @@
                 <div class="footer-bottom__end">
                   <ul class="list-images">
                     <li class="list-images__item">
-                      <img
-                        src="img/amex.png"
+                      <img src="#"
+                        data-src="img/amex.png"
                         alt="Icon: amex"
-                        class="list-images__image"
+                        class="list-images__image lazyload"
                       />
                     </li>
                     <li class="list-images__item">
-                      <img
-                        src="img/apple.png"
+                      <img src="#"
+                        data-src="img/apple.png"
                         alt="Icon: apple"
-                        class="list-images__image"
+                        class="list-images__image lazyload"
                       />
                     </li>
                     <li class="list-images__item">
-                      <img
-                        src="img/amazon.png"
+                      <img src="#"
+                        data-src="img/amazon.png"
                         alt="Icon: amazon"
-                        class="list-images__image"
+                        class="list-images__image lazyload"
                       />
                     </li>
                     <li class="list-images__item">
-                      <img
-                        src="img/paypal.png"
+                      <img src="#"
+                        data-src="img/paypal.png"
                         alt="Icon: paypal"
-                        class="list-images__image"
+                        class="list-images__image lazyload"
                       />
                     </li>
                     <li class="list-images__item">
-                      <img
-                        src="img/maestro.png"
+                      <img src="#"
+                        data-src="img/maestro.png"
                         alt="Icon: maestro"
-                        class="list-images__image"
+                        class="list-images__image lazyload"
                       />
                     </li>
                   </ul>
@@ -561,7 +561,7 @@
                 placeholder="Phone Number*"
                 name="phone"
                 required
-                minlength="10"
+                minlength="18"
                 />
                 <input 
                 type="email" 
@@ -604,7 +604,7 @@
                 placeholder="Phone Number*"
                 name="phone"
                 required
-                minlength="10"
+                minlength="18"
                 />
                 <textarea 
                 class="message modal__message" 
@@ -623,6 +623,7 @@
     <script src="js/jquery.mask.min.js"></script>
     <script src="js/inputmask.js"></script>
     <script src="js/aos.js"></script>
+    <script src="js/lazysizes.min.js" async></script>
     <script src="js/main.js"></script>
 </body>
 </html>

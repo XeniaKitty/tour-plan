@@ -31,6 +31,7 @@
             padding-top: 22px
             padding-bottom: 22px
             &__link
+                font-weight: bold
                 font-size: 12px
                 line-height: 15px
     .search
@@ -98,7 +99,7 @@
                 grid-column-start: 3
     .modal
         &__dialog
-            width: 478px
+            width: 90%
 @media (max-width: 767px)
     .container
         max-width: 576px
@@ -123,6 +124,7 @@
             padding-top: 30px  
             &--visible
                 display: block
+                overflow-y: scroll
         &-menu
             flex-direction: column
             &__item
@@ -256,10 +258,6 @@
         &__user
             flex-direction: column
             justify-content: center
-    .modal
-        &__dialog
-            width: 450px
-            padding: 30px 60px
 @media (max-width: 576px) 
     .navbar      
         .logo
@@ -295,6 +293,7 @@
         width: 100%
     .footer
         padding-bottom: 20px
+        margin: auto
         &-wrapper
             grid-template-columns: 1fr
             margin-bottom: 30px     
@@ -304,7 +303,10 @@
         &__social
             &-network
                 grid-row: 2
-                grid-column: 1    
+                grid-column: 1 
+                flex-direction: column   
+            &-links
+                margin-top: 16px
         &__additional
             grid-row: 3
             grid-column: 1
@@ -321,6 +323,7 @@
             &-form
                 grid-row: 7
                 grid-column: 1
+                margin-right: 17px
         &__message 
             margin-bottom: 15px
         &__form 
@@ -333,6 +336,7 @@
             order: 2
         &-bottom 
             grid-template: repeat(2, 1fr) / 1fr
+            margin: auto
             &__top
                 margin: 0 0 20px 
                 justify-content: flex-start
@@ -340,7 +344,6 @@
                 grid-column-start: 1
     .modal
         &__dialog
-            max-width: 450px
             width: 84%
             padding: 20px 30px
         &__info
