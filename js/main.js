@@ -77,10 +77,10 @@ $(document).ready(function() {
   jQuery(function($){
     $(".phone").mask("+7 (999) 999-99-99");
  });
- const map = document.querySelector('.google-map');
- map.addEventListener('mouseover', function() {
- map.insertAdjacentHTML('afterBegin', '<iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.041275564855!2d98.29254741427124!3d7.890750807948822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30503b7bfcd9f903%3A0xf7065fac1e3d7c48!2sDoubleTree%20by%20Hilton%20Phuket%20Banthai%20Resort!5e0!3m2!1sru!2sru!4v1595327221988!5m2!1sru!2sru"></iframe>');
-});
+ document.querySelector(".map__preview").addEventListener("mouseenter", ()=>{
+  document.querySelector(".map").innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31608.153640525412!2d98.27942255114789!3d7.996953176476688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305039f77c82826f%3A0xacc83aa6f90754f6!2sHilton%20Garden%20Inn%20Phuket%20Bang%20Tao!5e0!3m2!1sru!2sru!4v1596567498649!5m2!1sru!2sru" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>'
+}
+),
  AOS.init();
 });
 
